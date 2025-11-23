@@ -1,16 +1,20 @@
-# backend/Dockerfile
 FROM python:3.11-slim
 
 WORKDIR /code
 
-# Copy requirements first to leverage Docker cache
-COPY requirements.txt .
+# Copy requirements from backend directory
+COPY backend/requirements.txt .
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the app code
-COPY ./app ./app
+COPY backend/app ./app
+
+# Copy static files and templates
+COPY static /static
+COPY index.html /index.html
+COPY chat.html /chat.html
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
