@@ -25,8 +25,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Serve static
-app.mount("/static", StaticFiles(directory=os.path.join(os.path.dirname(__file__), "..", "static")), name="static")
+# Serve static files from root static directory
+app.mount("/static", StaticFiles(directory=os.path.join(os.path.dirname(__file__), "..", "..", "static")), name="static")
 
 ADMIN_SECRET = os.getenv("ADMIN_SECRET", "dev_secret_change_me")
 RATE_LIMIT_PER_MIN = int(os.getenv("RATE_LIMIT_PER_MIN", "30"))
@@ -92,7 +92,9 @@ async def api_chat(payload: dict, request: Request, db: DBSession = Depends(get_
     
     if results is None:
         # Fallback to GitHub API
-        results, err = github_search_repos(text, limit=6)
+        filters = payload.get("filters")
+        sort_by = payload.get("sort_by", "stars")
+        results, err = github_search_repos(text, filters=filters, sort_by=sort_by, limit=6)
         source = "github" if results is not None else "fallback"
         
         if results is None:

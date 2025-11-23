@@ -5,9 +5,11 @@ import logging
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")  # Optional, for higher rate limits
 logger = logging.getLogger(__name__)
 
-def github_search_repos(query, limit=6):
+def github_search_repos(query, filters=None, sort_by="stars", limit=6):
     """
     Search GitHub repositories using the GitHub Search API.
+    filters: dict with keys 'language', 'stars_min', 'stars_max', 'created_after'
+    sort_by: 'stars', 'updated', 'forks', 'help-wanted-issues'
     Returns (results_list, error)
     """
     try:
@@ -21,9 +23,28 @@ def github_search_repos(query, limit=6):
         if GITHUB_TOKEN:
             headers["Authorization"] = f"token {GITHUB_TOKEN}"
         
+        # Build query string with filters
+        q = query
+        if filters:
+            if filters.get("language"):
+                q += f" language:{filters['language']}"
+            
+            min_stars = filters.get("stars_min")
+            max_stars = filters.get("stars_max")
+            if min_stars is not None or max_stars is not None:
+                if min_stars is not None and max_stars is not None:
+                    q += f" stars:{min_stars}..{max_stars}"
+                elif min_stars is not None:
+                    q += f" stars:>={min_stars}"
+                elif max_stars is not None:
+                    q += f" stars:<={max_stars}"
+            
+            if filters.get("created_after"):
+                q += f" created:>{filters['created_after']}"
+
         params = {
-            "q": query,
-            "sort": "stars",
+            "q": q,
+            "sort": sort_by or "stars",
             "order": "desc",
             "per_page": limit
         }
