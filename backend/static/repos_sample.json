@@ -1,0 +1,242 @@
+[
+  {
+    "name": "react",
+    "owner": "facebook",
+    "stars": 228000,
+    "description": "The library for web and native user interfaces. Build encapsulated components that manage their own state.",
+    "language": "JavaScript",
+    "url": "https://github.com/facebook/react"
+  },
+  {
+    "name": "react-router",
+    "owner": "remix-run",
+    "stars": 52000,
+    "description": "Declarative routing for React",
+    "language": "TypeScript",
+    "url": "https://github.com/remix-run/react-router"
+  },
+  {
+    "name": "redux",
+    "owner": "reduxjs",
+    "stars": 60000,
+    "description": "Predictable state container for JavaScript apps",
+    "language": "TypeScript",
+    "url": "https://github.com/reduxjs/redux"
+  },
+  {
+    "name": "next.js",
+    "owner": "vercel",
+    "stars": 125000,
+    "description": "The React Framework for the Web. Used by some of the world's largest companies, Next.js enables you to create full-stack web applications.",
+    "language": "JavaScript",
+    "url": "https://github.com/vercel/next.js"
+  },
+  {
+    "name": "create-react-app",
+    "owner": "facebook",
+    "stars": 102000,
+    "description": "Set up a modern web app by running one command.",
+    "language": "JavaScript",
+    "url": "https://github.com/facebook/create-react-app"
+  },
+  {
+    "name": "react-native",
+    "owner": "facebook",
+    "stars": 118000,
+    "description": "A framework for building native applications using React",
+    "language": "C++",
+    "url": "https://github.com/facebook/react-native"
+  },
+  {
+    "name": "awesome-react",
+    "owner": "enaqx",
+    "stars": 63000,
+    "description": "A collection of awesome things regarding React ecosystem",
+    "language": "Shell",
+    "url": "https://github.com/enaqx/awesome-react"
+  },
+  {
+    "name": "react-hooks",
+    "owner": "facebook",
+    "stars": 228000,
+    "description": "React Hooks documentation and examples",
+    "language": "JavaScript",
+    "url": "https://github.com/facebook/react"
+  },
+  {
+    "name": "material-ui",
+    "owner": "mui",
+    "stars": 93000,
+    "description": "Ready-to-use foundational React components, free forever. It includes Material UI, which implements Google's Material Design.",
+    "language": "TypeScript",
+    "url": "https://github.com/mui/material-ui"
+  },
+  {
+    "name": "ant-design",
+    "owner": "ant-design",
+    "stars": 91000,
+    "description": "An enterprise-class UI design language and React UI library",
+    "language": "TypeScript",
+    "url": "https://github.com/ant-design/ant-design"
+  },
+  {
+    "name": "react-spring",
+    "owner": "pmndrs",
+    "stars": 28000,
+    "description": "A spring physics based React animation library",
+    "language": "TypeScript",
+    "url": "https://github.com/pmndrs/react-spring"
+  },
+  {
+    "name": "react-query",
+    "owner": "TanStack",
+    "stars": 41000,
+    "description": "Powerful asynchronous state management for TS/JS, React, Solid, Vue and Svelte",
+    "language": "TypeScript",
+    "url": "https://github.com/TanStack/query"
+  },
+  {
+    "name": "formik",
+    "owner": "jaredpalmer",
+    "stars": 33000,
+    "description": "Build forms in React, without the tears",
+    "language": "TypeScript",
+    "url": "https://github.com/jaredpalmer/formik"
+  },
+  {
+    "name": "react-testing-library",
+    "owner": "testing-library",
+    "stars": 19000,
+    "description": "Simple and complete React DOM testing utilities that encourage good testing practices",
+    "language": "JavaScript",
+    "url": "https://github.com/testing-library/react-testing-library"
+  },
+  {
+    "name": "styled-components",
+    "owner": "styled-components",
+    "stars": 40000,
+    "description": "Visual primitives for the component age. Use the best bits of ES6 and CSS to style your apps",
+    "language": "JavaScript",
+    "url": "https://github.com/styled-components/styled-components"
+  },
+  {
+    "name": "gatsby",
+    "owner": "gatsbyjs",
+    "stars": 55000,
+    "description": "The best React-based framework with performance, scalability and security built in",
+    "language": "JavaScript",
+    "url": "https://github.com/gatsbyjs/gatsby"
+  },
+  {
+    "name": "react-bootstrap",
+    "owner": "react-bootstrap",
+    "stars": 22000,
+    "description": "Bootstrap components built with React",
+    "language": "TypeScript",
+    "url": "https://github.com/react-bootstrap/react-bootstrap"
+  },
+  {
+    "name": "recharts",
+    "owner": "recharts",
+    "stars": 23000,
+    "description": "Redefined chart library built with React and D3",
+    "language": "TypeScript",
+    "url": "https://github.com/recharts/recharts"
+  },
+  {
+    "name": "react-beautiful-dnd",
+    "owner": "atlassian",
+    "stars": 33000,
+    "description": "Beautiful and accessible drag and drop for lists with React",
+    "language": "JavaScript",
+    "url": "https://github.com/atlassian/react-beautiful-dnd"
+  },
+  {
+    "name": "react-select",
+    "owner": "JedWatson",
+    "stars": 27000,
+    "description": "The Select Component for React.js",
+    "language": "TypeScript",
+    "url": "https://github.com/JedWatson/react-select"
+  },
+  {
+    "name": "vite",
+    "owner": "vitejs",
+    "stars": 67000,
+    "description": "Next Generation Frontend Tooling. Get ready for a development environment that can finally catch up with you.",
+    "language": "TypeScript",
+    "url": "https://github.com/vitejs/vite"
+  },
+  {
+    "name": "react-hook-form",
+    "owner": "react-hook-form",
+    "stars": 41000,
+    "description": "React Hooks for form state management and validation (Web + React Native)",
+    "language": "TypeScript",
+    "url": "https://github.com/react-hook-form/react-hook-form"
+  },
+  {
+    "name": "chakra-ui",
+    "owner": "chakra-ui",
+    "stars": 37000,
+    "description": "Simple, Modular & Accessible UI Components for your React Applications",
+    "language": "TypeScript",
+    "url": "https://github.com/chakra-ui/chakra-ui"
+  },
+  {
+    "name": "react-admin",
+    "owner": "marmelab",
+    "stars": 24000,
+    "description": "A frontend Framework for building B2B applications running in the browser on top of REST/GraphQL APIs, using ES6, React and Material Design",
+    "language": "TypeScript",
+    "url": "https://github.com/marmelab/react-admin"
+  },
+  {
+    "name": "react-three-fiber",
+    "owner": "pmndrs",
+    "stars": 27000,
+    "description": "A React renderer for Three.js",
+    "language": "TypeScript",
+    "url": "https://github.com/pmndrs/react-three-fiber"
+  },
+  {
+    "name": "zustand",
+    "owner": "pmndrs",
+    "stars": 46000,
+    "description": "Bear necessities for state management in React",
+    "language": "TypeScript",
+    "url": "https://github.com/pmndrs/zustand"
+  },
+  {
+    "name": "react-icons",
+    "owner": "react-icons",
+    "stars": 11000,
+    "description": "svg react icons of popular icon packs",
+    "language": "TypeScript",
+    "url": "https://github.com/react-icons/react-icons"
+  },
+  {
+    "name": "framer-motion",
+    "owner": "framer",
+    "stars": 23000,
+    "description": "Open source, production-ready animation and gesture library for React",
+    "language": "TypeScript",
+    "url": "https://github.com/framer/motion"
+  },
+  {
+    "name": "react-dnd",
+    "owner": "react-dnd",
+    "stars": 21000,
+    "description": "Drag and Drop for React",
+    "language": "TypeScript",
+    "url": "https://github.com/react-dnd/react-dnd"
+  },
+  {
+    "name": "react-virtualized",
+    "owner": "bvaughn",
+    "stars": 26000,
+    "description": "React components for efficiently rendering large lists and tabular data",
+    "language": "JavaScript",
+    "url": "https://github.com/bvaughn/react-virtualized"
+  }
+]

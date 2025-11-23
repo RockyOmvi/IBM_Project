@@ -1,0 +1,29 @@
+<!-- static/index.html -->
+<!-- file path: backend/static/index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Deepseek ChatOps Demo</title>
+  <link rel="stylesheet" href="/static/styles.css"/>
+</head>
+<body>
+  <div id="app">
+    <header><h1>Deepseek ChatOps</h1></header>
+    <main id="chat">
+      <div id="messages"></div>
+      <div id="repo-results"></div>
+    </main>
+    <form id="inputForm">
+      <input id="inputText" placeholder="Ask: Find best repos to practice React" autocomplete="off"/>
+      <button>Send</button>
+    </form>
+  </div>
+  <script>
+    // minimal config for backend base path
+    window.DEEPLIMIT = 6;
+  </script>
+  <script src="/static/app.js"></script>
+</body>
+</html>
